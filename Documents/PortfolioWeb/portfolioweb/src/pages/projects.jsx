@@ -46,7 +46,8 @@ const ProjectsPage = () => {
       technologies: ['React', 'CSS', 'Netlify'],
       githubLink: 'https://github.com/username/portfolio',
       liveDemo: 'https://portfolio-demo.com',
-    }
+    },
+    
   ];
 
   return (

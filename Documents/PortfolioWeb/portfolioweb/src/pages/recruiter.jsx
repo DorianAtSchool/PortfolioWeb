@@ -8,7 +8,7 @@ interface RecruiterProps {
 
 const Recruiter = ({isRecruiter, setRecruiter}) => {
     const openResume = () => {
-        const fileUrl = "C:/Users/Dorian/Documents/PortfolioWeb/portfolioweb/src/assets/DBG_RESUME_SUMMER2025.pdf"; // Replace with your file URL
+        const fileUrl = "assets/DBG_RESUME_SUMMER2025.pdf"; // Replace with your file URL
         window.open(fileUrl, '_blank');
     };
     return (
@@ -18,7 +18,14 @@ const Recruiter = ({isRecruiter, setRecruiter}) => {
             >
         Resume
         </button>
-        
+        // <a 
+        // className="recruiter-button"
+        // href="/assets/DBG_RESUME_SUMMER2025.pdf"
+        // target="_blank" 
+        // rel="noopener noreferrer" 
+       
+        // >Resume
+        // </a>
     )
 
 }

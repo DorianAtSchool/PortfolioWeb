@@ -17,15 +17,15 @@ const AboutMe = () => {
     const indexRef3 = useRef(0);
   
     // initialize experiences object of each having timeline, title, link, location, description, technologies
-    const timelines = ['2024 — Present', '2022 — 2024', '2020 — 2022', '2018 — 2020'];
-    const titles = ['Senior Frontend Engineer, Accessibility', 'Frontend Engineer, Accessibility', 'Frontend Developer', 'Web Developer'];
-    const links = ['https://www.klaviyo.com', 'https://www.klaviyo.com', 'https://www.klaviyo.com', 'https://www.klaviyo.com'];
-    const locations = ['Klaviyo', 'Klaviyo', 'Klaviyo', 'Klaviyo'];
-    const descriptions = ['Build and maintain critical components used to construct Klaviyo\'s frontend, across the whole product. Work closely with cross-functional teams, including developers, designers, and product managers, to implement and advocate for best practices in web accessibility.', 'Worked on the development of Klaviyo\'s frontend, focusing on accessibility and user experience. Collaborated with the design team to create intuitive and user-friendly interfaces.', 'Developed and maintained frontend components for Klaviyo\'s web application. Worked closely with the design team to implement new features and improve existing ones.', 'Built and maintained web applications for various clients, focusing on user experience and performance. Collaborated with the design team to create visually appealing and intuitive interfaces.'];
-    const technologies = [['JavaScript', 'TypeScript', 'React', 'Storybook'], ['JavaScript', 'React', 'Storybook'], ['JavaScript', 'React', 'Storybook'], ['JavaScript', 'React', 'Storybook']];
+    const timelines = ['2024 — Present', '2024 — Present', '2022 — 2024', '2020 — 2022', '2018 — 2020'];
+    const titles = ['Senior Frontend Engineer, Accessibility', 'Senior Frontend Engineer, Accessibility','Frontend Engineer, Accessibility', 'Frontend Developer', 'Web Developer'];
+    const links = ['https://www.klaviyo.com', 'https://www.klaviyo.com','https://www.klaviyo.com', 'https://www.klaviyo.com', 'https://www.klaviyo.com'];
+    const locations = ['Klaviyo', 'Klaviyo', 'Klaviyo', 'Klaviyo', 'Klaviyo'];
+    const descriptions = ['Build and maintain critical components used to construct Klaviyo\'s frontend, across the whole product. Work closely with cross-functional teams, including developers, designers, and product managers, to implement and advocate for best practices in web accessibility.','Build and maintain critical components used to construct Klaviyo\'s frontend, across the whole product. Work closely with cross-functional teams, including developers, designers, and product managers, to implement and advocate for best practices in web accessibility.', 'Worked on the development of Klaviyo\'s frontend, focusing on accessibility and user experience. Collaborated with the design team to create intuitive and user-friendly interfaces.', 'Developed and maintained frontend components for Klaviyo\'s web application. Worked closely with the design team to implement new features and improve existing ones.', 'Built and maintained web applications for various clients, focusing on user experience and performance. Collaborated with the design team to create visually appealing and intuitive interfaces.'];
+    const technologies = [['JavaScript', 'TypeScript', 'React', 'Storybook'], ['JavaScript', 'TypeScript', 'React', 'Storybook'],['JavaScript', 'React', 'Storybook'], ['JavaScript', 'React', 'Storybook'], ['JavaScript', 'React', 'Storybook']];
     
     const experiences = [];
-    for (let i = 0; i < 4; i++) {
+    for (let i = 0; i < 5; i++) {
       experiences.push({timeline:timelines[i], title:titles[i], link:links[i], location:locations[i], description:descriptions[i], technologies: technologies[i]});
     }
 
@@ -96,13 +96,16 @@ const AboutMe = () => {
 
 
               <div className='section-content'>
-                <div className='left'>
+                
                   <p> University of Massachusetts, Commonwealth Honors College</p>
+                  <div class="vl"></div>
                   <p> 2022 - 2026</p>
-                </div>
-                <div className='right'>
-                  
-                </div>
+                  <div class="vl"></div>
+                  <p> BS Honors</p>
+                  <div class="vl"></div>
+                  <p> Computer Science</p>
+                
+                
               </div>
                 {/* <div id="typing-text">{typedText1}</div>
                 <span className="cursor"></span> */}
