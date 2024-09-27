@@ -1,0 +1,25 @@
+.projects-page {
+    padding: 2rem;
+    position:relative;
+    top: 20rem;
+    background-color: #000011;
+  }
+  
+  .page-heading {
+    font-size: 5rem;
+    text-align: left;
+    margin-bottom: 2rem;
+    padding: 2rem;
+  }
+  
+  .projects-grid {
+    /* display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem; */
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 columns */
+    grid-template-rows: repeat(3, auto); /* 3 rows */
+    /* display: flex;
+    flex-direction: row; */
+    gap: 2.5rem;
+  }
